@@ -115,7 +115,8 @@ public class OnboardingActivity extends AppCompatActivity implements SignInTask.
 
         TextView signUpWithEmailText = findViewById(R.id.sign_up_with_email_text);
         String inatNetwork = mApp.getInaturalistNetworkMember();
-        String networkName = mApp.getStringResourceByName("network_" + inatNetwork);
+//        String networkName = mApp.getStringResourceByName("network_" + inatNetwork);
+        String networkName = "Wild Orchid Watch"; // FIXME wow
         signUpWithEmailText.setText(Html.fromHtml(String.format(getString(R.string.new_to_inat_sign_up_now), networkName)));
 
         View login = (View) findViewById(R.id.login_with_email);

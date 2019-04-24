@@ -436,6 +436,7 @@ public class LoginSignupActivity extends AppCompatActivity implements SignInTask
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
         ((EditText)findViewById(R.id.hide_focus)).requestFocus();
 
+        mTerms.setVisibility(View.GONE); // FIXME wow
     }
 
     @Override
