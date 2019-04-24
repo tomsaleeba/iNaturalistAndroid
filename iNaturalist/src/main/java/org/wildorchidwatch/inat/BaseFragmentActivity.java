@@ -142,6 +142,9 @@ public class BaseFragmentActivity extends AppCompatActivity {
         getSupportActionBar().setIcon(android.R.color.transparent);
 
         ((LinearLayout)findViewById(R.id.menu_help)).setVisibility(View.GONE); // FIXME wow
+        ((LinearLayout)findViewById(R.id.menu_guides)).setVisibility(View.GONE); // FIXME wow
+        ((LinearLayout)findViewById(R.id.menu_missions)).setVisibility(View.GONE); // FIXME wow
+        ((LinearLayout)findViewById(R.id.menu_explore)).setVisibility(View.GONE); // FIXME wow
 
         if (Build.VERSION.SDK_INT > Build.VERSION_CODES.HONEYCOMB) {
             ((ImageView)findViewById(R.id.menu_explore_icon)).setAlpha(0.54f);
@@ -160,9 +163,9 @@ public class BaseFragmentActivity extends AppCompatActivity {
         
  
         // See if we need to display the tutorial (only for the first time using the app)
-        SharedPreferences preferences = getSharedPreferences("iNaturalistPreferences", MODE_PRIVATE);
-        boolean firstTime = preferences.getBoolean("first_time", true);
-        firstTime = false; // FIXME wow
+//        SharedPreferences preferences = getSharedPreferences("iNaturalistPreferences", MODE_PRIVATE);
+//        boolean firstTime = preferences.getBoolean("first_time", true);
+        boolean firstTime = false; // FIXME wow
 
         if (firstTime) {
             Intent intent = new Intent(this, TutorialActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);

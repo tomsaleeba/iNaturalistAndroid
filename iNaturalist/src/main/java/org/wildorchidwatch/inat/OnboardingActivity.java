@@ -88,7 +88,7 @@ public class OnboardingActivity extends AppCompatActivity implements SignInTask.
 	    mPrefEditor = mPreferences.edit();
 
         mBackgroundImage = (ViewFlipper) findViewById(R.id.background_image);
-        mBackgroundImage.startFlipping();
+//        mBackgroundImage.startFlipping(); // FIXME wow
 
         View closeButton = (View) findViewById(R.id.close);
         closeButton.setOnClickListener(new View.OnClickListener() {

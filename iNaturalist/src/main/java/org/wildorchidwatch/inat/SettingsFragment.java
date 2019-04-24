@@ -82,6 +82,11 @@ public class SettingsFragment extends PreferenceFragmentCompat {
         mPreferences = getActivity().getSharedPreferences("iNaturalistPreferences", Activity.MODE_PRIVATE);
         mPrefEditor = mPreferences.edit();
 
+        mLanguagePreference.setVisible(false);
+        mNetworkPreference.setVisible(false);
+        mDonate.setVisible(false);
+        mAbout.setVisible(false);
+
         refreshSettings();
     }
 

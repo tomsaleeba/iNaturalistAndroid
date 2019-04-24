@@ -8,30 +8,29 @@
     <ViewFlipper
         android:id="@+id/background_image"
         android:layout_width="fill_parent"
-        android:inAnimation="@anim/fade_in"
-        android:outAnimation="@anim/fade_out"
-        android:autoStart="true"
+        android:layout_height="fill_parent"
+        android:autoStart="false"
         android:flipInterval="6000"
-        android:layout_height="fill_parent">
+        android:inAnimation="@anim/fade_in"
+        android:outAnimation="@anim/fade_out">
 
         <ImageView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:src="@drawable/signup_background_1"
             android:scaleType="fitXY"
-            />
+            android:src="@drawable/signup_background_1" />
+
         <ImageView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:src="@drawable/signup_background_2"
             android:scaleType="fitXY"
-            />
+            android:src="@drawable/signup_background_2" />
+
         <ImageView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:src="@drawable/signup_background_3"
             android:scaleType="fitXY"
-            />
+            android:src="@drawable/signup_background_3" />
 
     </ViewFlipper>
 
@@ -50,12 +49,15 @@
         />
 
 
-    <ImageView
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="42dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:src="@drawable/logo_inat_signup" />
+        android:text="Wild Orchid Watch"
+        android:textAppearance="@style/iNatTitleTextStyle"
+        android:textColor="@android:color/white"
+        android:textSize="36sp" />
 
     <LinearLayout
         android:layout_alignParentBottom="true"
