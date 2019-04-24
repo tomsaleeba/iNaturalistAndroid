@@ -16,22 +16,23 @@
 */
 package com.ptashek.widgets.datetimepicker;
 
-import java.util.Calendar;
-import java.util.Date;
-
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.DatePicker.OnDateChangedListener;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TimePicker;
-import android.widget.ViewSwitcher;
-import android.widget.DatePicker.OnDateChangedListener;
 import android.widget.TimePicker.OnTimeChangedListener;
-import org.inaturalist.android.R;
+import android.widget.ViewSwitcher;
+
+import org.wildorchidwatch.inat.R;
+
+import java.util.Calendar;
+import java.util.Date;
 
 public class DateTimePicker extends RelativeLayout implements View.OnClickListener, OnDateChangedListener, OnTimeChangedListener {
 

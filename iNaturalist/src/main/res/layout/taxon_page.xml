@@ -294,7 +294,7 @@
 
                 <fragment
                     android:id="@+id/observations_map"
-                    android:name="org.inaturalist.android.ScrollableMapFragment"
+                    android:name="org.wildorchidwatch.inat.ScrollableMapFragment"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     />

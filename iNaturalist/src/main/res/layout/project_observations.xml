@@ -30,7 +30,7 @@
         android:layout_marginTop="50dp"
         android:text="@string/no_observations_found" />
 
-    <org.inaturalist.android.GridViewExtended
+    <org.wildorchidwatch.inat.GridViewExtended
         android:id="@+id/observations_grid"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"

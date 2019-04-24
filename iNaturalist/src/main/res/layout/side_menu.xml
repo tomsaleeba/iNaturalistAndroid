@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="290dp"
     android:layout_height="match_parent"
     android:layout_gravity="start"
@@ -307,59 +308,62 @@
                 android:layout_width="match_parent"
                 android:layout_height="1sp"
                 android:background="#dbdbdb" />
+
             <LinearLayout
                 android:id="@+id/menu_settings"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
                 android:background="@drawable/side_menu_item_background"
                 android:clickable="true"
                 android:focusable="true"
-                android:orientation="horizontal"
                 android:gravity="center_vertical"
-                android:padding="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="60dp">
+                android:orientation="horizontal"
+                android:padding="10dp">
+
                 <ImageView
                     android:id="@+id/menu_settings_icon"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:layout_marginLeft="7dp"
                     android:scaleType="fitXY"
-                    android:src="@drawable/ic_settings_black_24dp"
-                    />
+                    android:src="@drawable/ic_settings_black_24dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="16sp"
-                    android:textColor="#000000"
                     android:layout_marginLeft="30dp"
-                    android:text="@string/settings"/>
+                    android:text="@string/settings"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
             </LinearLayout>
 
 
             <LinearLayout
                 android:id="@+id/menu_help"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
                 android:background="@drawable/side_menu_item_background"
                 android:clickable="true"
                 android:focusable="true"
-                android:orientation="horizontal"
                 android:gravity="center_vertical"
-                android:padding="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="60dp">
+                android:orientation="horizontal"
+                android:padding="10dp">
+
                 <ImageView
                     android:id="@+id/menu_help_icon"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:layout_marginLeft="7dp"
                     android:scaleType="fitXY"
-                    android:src="@drawable/ic_help_black_24dp"
-                    />
+                    android:src="@drawable/ic_help_black_24dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="16sp"
-                    android:textColor="#000000"
                     android:layout_marginLeft="30dp"
-                    android:text="@string/help"/>
+                    android:text="@string/help"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
             </LinearLayout>
 
         </LinearLayout>

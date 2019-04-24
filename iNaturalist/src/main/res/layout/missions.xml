@@ -161,7 +161,7 @@
                     android:layout_marginBottom="16dp"
                     />
 
-                <org.inaturalist.android.GridViewExtended
+                <org.wildorchidwatch.inat.GridViewExtended
                     android:id="@+id/categories"
                     android:layout_width="fill_parent"
                     android:layout_height="match_parent"
