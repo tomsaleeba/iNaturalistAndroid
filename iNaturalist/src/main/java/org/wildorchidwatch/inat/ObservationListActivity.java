@@ -1207,7 +1207,6 @@ public class ObservationListActivity extends BaseFragmentActivity implements INo
                                     // User not logged-in - redirect to onboarding screen
                                     startActivity(new Intent(ObservationListActivity.this, OnboardingActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP));
 
-
                                     try {
                                         JSONObject eventParams = new JSONObject();
                                         eventParams.put(AnalyticsClient.EVENT_PARAM_VIA, AnalyticsClient.EVENT_VALUE_AUTH_REQUIRED);

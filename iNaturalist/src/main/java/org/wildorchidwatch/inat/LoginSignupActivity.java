@@ -398,6 +398,7 @@ public class LoginSignupActivity extends AppCompatActivity implements SignInTask
                 }
             }
         });
+        loginWithGoogle.setVisibility(View.GONE); // FIXME wow
 
         mSignInTask = new SignInTask(this, this, mFacebookLoginButton);
 

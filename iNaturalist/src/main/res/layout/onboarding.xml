@@ -107,53 +107,52 @@
         android:layout_above="@id/skip"
         android:layout_marginBottom="20dp"
         >
+
         <LinearLayout
+            android:id="@+id/login_with_facebook"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
             android:background="#11FFFFFF"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:focusable="true"
             android:clickable="true"
-            android:id="@+id/login_with_facebook"
-            >
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="invisible">
 
             <RelativeLayout
                 android:layout_width="45dp"
                 android:layout_height="wrap_content">
+
                 <ImageView
-                    android:duplicateParentState="true"
                     android:layout_width="30dp"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/facebook_button_icon"
                     android:layout_centerHorizontal="true"
-                    />
+                    android:duplicateParentState="true"
+                    android:src="@drawable/facebook_button_icon" />
             </RelativeLayout>
 
             <View
-                android:duplicateParentState="true"
                 android:layout_width="1dp"
                 android:layout_height="fill_parent"
-                android:background="#33FFFFFF" />
+                android:background="#33FFFFFF"
+                android:duplicateParentState="true" />
 
             <TextView
-                android:duplicateParentState="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:textColor="@drawable/semi_transparent_button_text"
+                android:duplicateParentState="true"
                 android:text="@string/login_with"
-                />
+                android:textColor="@drawable/semi_transparent_button_text" />
 
             <TextView
-                android:duplicateParentState="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="3dp"
-                android:textColor="@drawable/semi_transparent_button_text"
+                android:duplicateParentState="true"
                 android:text="@string/facebook"
-                android:textStyle="bold"
-                />
+                android:textColor="@drawable/semi_transparent_button_text"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
