@@ -124,7 +124,7 @@ public class UserActivity extends BaseFragmentActivity implements UserActivities
 
         addTab(0, getString(R.string.my_content));
         addTab(1, getString(R.string.following));
-        addTab(2, getString(R.string.news));
+//        addTab(2, getString(R.string.news)); // FIXME wow
 
         ViewPager.OnPageChangeListener pageListener = new ViewPager.OnPageChangeListener() {
             @Override

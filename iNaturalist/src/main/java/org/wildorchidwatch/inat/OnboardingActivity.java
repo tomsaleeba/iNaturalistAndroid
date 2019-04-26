@@ -80,7 +80,7 @@ public class OnboardingActivity extends AppCompatActivity implements SignInTask.
         Boolean showSkip = false;
         if (savedInstanceState == null) {
             shouldLogin = intent.getBooleanExtra(LOGIN, false);
-            showSkip = intent.getBooleanExtra(SHOW_SKIP, false);
+//            showSkip = intent.getBooleanExtra(SHOW_SKIP, false); // FIXME wow
         }
 
         mHelper = new ActivityHelper(this);

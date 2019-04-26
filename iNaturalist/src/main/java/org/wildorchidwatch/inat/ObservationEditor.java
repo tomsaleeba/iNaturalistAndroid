@@ -805,6 +805,14 @@ public class ObservationEditor extends AppCompatActivity {
         	}
         }
 
+        // FIXME wow
+        boolean isNoProject = mProjectIds.isEmpty();
+        if (isNoProject) {
+            int targetProjectId = getResources().getInteger(R.integer.default_inat_project);
+            mProjectIds.add(targetProjectId);
+            saveProjects();
+        }
+
         refreshProjectFields();
 
         if (intent != null) {
@@ -1396,7 +1404,8 @@ public class ObservationEditor extends AppCompatActivity {
             int index = values.indexOf(mObservation.geoprivacy);
             mGeoprivacy.setSelection(index > -1 ? index : 0);
         } else {
-            mGeoprivacy.setSelection(0);
+            int obscured = 1; // FIXME wow
+            mGeoprivacy.setSelection(obscured);
         }
         updateObservationVisibilityDescription();
 
@@ -1529,7 +1538,7 @@ public class ObservationEditor extends AppCompatActivity {
         if (mCursor == null) { return true; }
 
         uiToObservation();
-        
+
         boolean updatedProjects = saveProjects();
         saveProjectFields();
         

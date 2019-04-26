@@ -477,6 +477,14 @@ public class LoginSignupActivity extends AppCompatActivity implements SignInTask
     public void onLoginSuccessful() {
         mSignInTask.pause();
 
+        // FIXME wow
+        boolean isNotJoined = true; // FIXME should probably check if we've already joined first but the POST seems idempotent
+        if (isNotJoined) {
+            Intent serviceIntent = new Intent(INaturalistService.ACTION_JOIN_PROJECT, null, LoginSignupActivity.this, INaturalistService.class);
+            serviceIntent.putExtra(INaturalistService.PROJECT_ID, getResources().getInteger(R.integer.default_inat_project));
+            ContextCompat.startForegroundService(this, serviceIntent);
+        }
+
         setResult(RESULT_OK);
         finish();
     }

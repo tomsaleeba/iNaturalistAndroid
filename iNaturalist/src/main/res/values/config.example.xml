@@ -14,6 +14,9 @@
     <!-- <string name="oauth_client_id">xxx</string>  -->
     <!-- <string name="oauth_client_secret">xxx</string> -->
 
+    <!--Default iNat project ID (integer) -->
+    <!--<integer name="default_inat_project">12345</integer>-->
+
     <!-- Flurry Analytics API key -->
     <!-- <string name="flurry_api_key">xxxx</string>  -->
 

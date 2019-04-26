@@ -3868,6 +3868,15 @@ public class INaturalistService extends IntentService {
             BetterJSONObject jsonProject = new BetterJSONObject(result.getJSONObject(0));
             Project project = new Project(jsonProject);
 
+            // FIXME wow
+            Cursor c2 = getContentResolver().query(Project.CONTENT_URI, Project.PROJECTION, "id = '" + projectId + "'", null, Project.DEFAULT_SORT_ORDER);
+            c2.moveToFirst();
+            boolean isProjectAlreadyJoined = c2.getCount() > 0;
+            c2.close();
+            if (isProjectAlreadyJoined) {
+                return;
+            }
+
             // Add joined project locally
             ContentValues cv = project.getContentValues();
             getContentResolver().insert(Project.CONTENT_URI, cv);

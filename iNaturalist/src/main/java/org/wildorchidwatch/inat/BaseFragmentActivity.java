@@ -141,10 +141,11 @@ public class BaseFragmentActivity extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setIcon(android.R.color.transparent);
 
-        ((LinearLayout)findViewById(R.id.menu_help)).setVisibility(View.GONE); // FIXME wow
+        ((LinearLayout)findViewById(R.id.menu_explore)).setVisibility(View.GONE); // FIXME wow
+        ((LinearLayout)findViewById(R.id.menu_projects)).setVisibility(View.GONE); // FIXME wow
         ((LinearLayout)findViewById(R.id.menu_guides)).setVisibility(View.GONE); // FIXME wow
         ((LinearLayout)findViewById(R.id.menu_missions)).setVisibility(View.GONE); // FIXME wow
-        ((LinearLayout)findViewById(R.id.menu_explore)).setVisibility(View.GONE); // FIXME wow
+        ((LinearLayout)findViewById(R.id.menu_help)).setVisibility(View.GONE); // FIXME wow
 
         if (Build.VERSION.SDK_INT > Build.VERSION_CODES.HONEYCOMB) {
             ((ImageView)findViewById(R.id.menu_explore_icon)).setAlpha(0.54f);
