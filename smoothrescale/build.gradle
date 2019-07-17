@@ -20,7 +20,7 @@ android {
     sourceSets.main.jni.srcDirs = []
 
     task ndkBuild(type: Exec, description: 'Compile JNI source via NDK') {
-        def ndkDir = System.getenv('ANDROID_NDK_HOME')
+        def ndkDir = '/zeta/android-sdk/Sdk/ndk-bundle'
 
         commandLine "$ndkDir/ndk-build",
                 'NDK_PROJECT_PATH=build/intermediates/ndk',

@@ -216,8 +216,9 @@ public class INaturalistService extends IntentService {
     public static final int EXPLORE_DEFAULT_RESULTS_PER_PAGE = 30;
 
     public static String TAG = "INaturalistService";
-    public static String HOST = "https://www.inaturalist.org";
-    public static String API_HOST = "https://api.inaturalist.org/v1";
+    public static String HOST = "https://dev.inat.techotom.com";
+    //public static String API_HOST = "https://dev.api.inat.techotom.com/v1";
+    public static String API_HOST = "http://129.127.180.228:38080/v1";
     public static String USER_AGENT = "iNaturalist/%VERSION% (" +
             "Build %BUILD%; " +
             "Android " + System.getProperty("os.version") + " " + android.os.Build.VERSION.INCREMENTAL + "; " +
